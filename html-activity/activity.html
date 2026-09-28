@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practical Application Activity</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 860px; margin: 0 auto; padding: 0 16px 40px; line-height: 1.5; }
+        header, footer { text-align: center; line-height: 0.7; }
+        section { border-top: 2px solid #ddd; padding-top: 8px; margin-top: 32px; }
+        figure { margin: 16px 0; }
+        figcaption { font-style: italic; color: #555; margin-left: 100px; }
+        #navigation { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+        #abbr_tag { position: relative; bottom: 15px; }
+        #mark_tag { position: relative; bottom: 15px; }
+        #details_tag { position: relative; bottom: 15px; }
+    </style>
+</head>
+<body>
+
+   <header id="page-header">
+       <h1 id="main-header">HTML Practical Application Activity</h1>
+       <p>ACTIVITY 2</p>
+   </header>
+
+   <nav id="main-nav">
+       <ul id="navigation">
+           <li><a href="#images">Images</a></li>
+           <li><a href="#hyperlinks">Hyperlinks</a></li>
+           <li><a href="#multimedia">Multimedia</a></li>
+           <li><a href="#useful-tags">Useful Tags</a></li>
+           <li><a href="#html-dom">HTML DOM</a></li>
+       </ul>
+   </nav>
+
+   <section id="images">
+         <h2>Images</h2>
+         <figure>
+              <img src="images/sea.jpg" alt="Illustration of a sunset in the sea" width="400" height="520">
+              <figcaption>Figure 1: Sunset in the sea.</figcaption>
+         </figure>
+         <img src="images/sunrise.jpg" alt="A sunrise in the mountain" width="350" height="450">
+         <img src="images/sunshine.jpg" alt="Illustration of a beautiful sunrise" width="350" height="450">
+   </section>
+    
+   <section id="hyperlinks">
+         <h2>Hyperlinks</h2>
+         <ul>
+             <li>Internal link: <a href="about.html">About this page</a></li>
+             <li>External link: <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+             <li>Email link: <a href="mailto:ralphdionson2004@gmail.com?subject=HTML%20Activity">Send me an email</a></li>
+         </ul>
+   </section>
+
+    <section id="multimedia">
+            <h2>Multimedia</h2>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="media/my_audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <h3>Video</h3>
+            <video controls width="480" height="270">
+                <source src="media/my_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>    
+    </section>
+
+    <section id="useful-tags">
+            <h2>Useful Tags</h2>
+
+            <!-- I choose <abbr> tag because it is useful for providing additional information about the text without needing to include the full form -->
+            <h3>Abbreviation tag</h3>
+            <p id="abbr_tag"><abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language for creating web pages.</p>
+           
+            <!-- <mark> tag is used to highlight an important text or phrase -->
+            <h3>Mark tag</h3>
+            <p id="mark_tag">This is a <mark>highlighted</mark> sentence.</p>
+
+            <!-- I chose <details> and <summary> to create a section the reader can expand and collapse makes the page more organized. -->
+            <h3>Details and Summary tags</h3>
+            <details id="details_tag">
+                <summary>Click to expand</summary>
+                <p>Hello, I'm Ralph Dionson.</p>
+            </details>
+    </section>
+
+    <section id="html-dom">
+            <h2>HTML DOM</h2>
+            <p>The DOM represents this page as a tree of elements. The screenshot below shows the DevTools Elements panel with the nested elements of this page.</p>
+            <img src="dom-tree.png" alt="Screenshot of the browser DevTools Elements panel showing the DOM tree of this page" width="600">
+            <p><a href="#main-header">Back to the top</a></p>
+    </section>
+
+
+  <!--The DOM tree shows how elements are arranged in a parent-child
+   relationship. The <body> element acts as a parent because it contains 
+   different parts of the webpage, including the <nav id="main-nav"> element. 
+   Inside the navigation, the <ul id="navigation"> serves as a parent for the
+   <li> elements, which then contain the <a> tags for each link. This structure
+   helps keep the HTML organized and makes it easier for the browser to understand
+   how the different parts of the webpage are connected.-->
+
+</body>
+</html>
