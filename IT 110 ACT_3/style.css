@@ -166,3 +166,24 @@ visibility: hidden leaves an empty space where the paragpraph placed.
     overflow: auto;
         
 }
+
+/*
+Reflection Questions 
+Answer in 2–3 sentences each. Write your answers in a comment at the very bottom of styles.css, or on a 
+separate sheet. 
+1. In your own words, why did one of your two conflicting rules win in Part A? (Think specificity and 
+order.) 
+  - The second .intro rule wins because both rules target the same class and have equal specificity. 
+  Since their specificity is the same, CSS follows the source order, meaning the rule written last 
+  takes priority. Therefore, the text color becomes #012622 instead of #526279.
+
+
+2. What is the rendered width of one .card if box-sizing were content-box instead of border-box? 
+Show your computation. 
+  - If box-sizing were set to content-box, the total rendered width of .card would be 552px because 
+  the padding and borders would be added to the specified width.
+
+3. When would you choose visibility: hidden instead of display: none?
+    - If I want to temporarily hide a message without affecting the position of other elements.
+
+*/
